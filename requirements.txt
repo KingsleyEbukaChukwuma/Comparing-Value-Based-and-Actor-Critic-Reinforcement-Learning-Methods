@@ -1,0 +1,9 @@
+stable-baselines3>=2.3.0
+gymnasium>=0.29.0
+box2d-py
+pygame
+torch
+numpy
+pandas
+matplotlib
+pyyaml

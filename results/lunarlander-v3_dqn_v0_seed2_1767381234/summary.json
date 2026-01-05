@@ -1,0 +1,33 @@
+{
+  "algo": "dqn",
+  "env_id": "LunarLander-v3",
+  "eval_episodes": 20,
+  "eval_freq": 10000,
+  "final_eval_mean_return": 197.56107119999996,
+  "final_eval_std_return": 131.24672584230683,
+  "model_kwargs": {
+    "batch_size": 128,
+    "buffer_size": 200000,
+    "exploration_final_eps": 0.1,
+    "exploration_fraction": 0.4,
+    "gamma": 0.99,
+    "gradient_steps": 1,
+    "learning_rate": 0.0003,
+    "learning_starts": 10000,
+    "policy_kwargs": {
+      "activation_fn": "<class 'torch.nn.modules.activation.ReLU'>",
+      "net_arch": [
+        256,
+        256
+      ]
+    },
+    "target_update_interval": 5000,
+    "train_freq": 4
+  },
+  "n_envs": 1,
+  "reward": "v0",
+  "run_name": "lunarlander-v3_dqn_v0_seed2_1767381234",
+  "seed": 2,
+  "timesteps": 600000,
+  "train_time_seconds": 1491.140951871872
+}

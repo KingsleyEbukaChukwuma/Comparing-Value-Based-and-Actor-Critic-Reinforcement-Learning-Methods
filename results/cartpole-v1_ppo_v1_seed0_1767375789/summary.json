@@ -1,0 +1,33 @@
+{
+  "algo": "ppo",
+  "env_id": "CartPole-v1",
+  "eval_episodes": 20,
+  "eval_freq": 10000,
+  "final_eval_mean_return": 499.98368089999997,
+  "final_eval_std_return": 0.0010721423832769036,
+  "model_kwargs": {
+    "batch_size": 64,
+    "clip_range": 0.2,
+    "ent_coef": 0.0,
+    "gae_lambda": 0.95,
+    "gamma": 0.99,
+    "learning_rate": 0.0003,
+    "max_grad_norm": 0.5,
+    "n_epochs": 10,
+    "n_steps": 512,
+    "policy_kwargs": {
+      "activation_fn": "<class 'torch.nn.modules.activation.Tanh'>",
+      "net_arch": [
+        64,
+        64
+      ]
+    },
+    "vf_coef": 0.5
+  },
+  "n_envs": 4,
+  "reward": "v1",
+  "run_name": "cartpole-v1_ppo_v1_seed0_1767375789",
+  "seed": 0,
+  "timesteps": 150000,
+  "train_time_seconds": 211.85242342948914
+}

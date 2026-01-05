@@ -1,0 +1,35 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+.venv/
+.env
+
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# folders
+rl-sb3-project/
+
+
+# RL outputs
+runs*/
+logs*/
+tensorboard*/
+*.zip
+*.npz
+
+tb/
+events.out.tfevents.*
+

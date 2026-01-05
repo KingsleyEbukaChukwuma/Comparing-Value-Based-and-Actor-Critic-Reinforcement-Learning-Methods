@@ -1,0 +1,33 @@
+{
+  "algo": "ppo",
+  "env_id": "LunarLander-v3",
+  "eval_episodes": 20,
+  "eval_freq": 10000,
+  "final_eval_mean_return": 221.63981199999998,
+  "final_eval_std_return": 63.37546242228411,
+  "model_kwargs": {
+    "batch_size": 128,
+    "clip_range": 0.2,
+    "ent_coef": 0.01,
+    "gae_lambda": 0.95,
+    "gamma": 0.99,
+    "learning_rate": 0.00025,
+    "max_grad_norm": 0.5,
+    "n_epochs": 10,
+    "n_steps": 1024,
+    "policy_kwargs": {
+      "activation_fn": "<class 'torch.nn.modules.activation.Tanh'>",
+      "net_arch": [
+        256,
+        256
+      ]
+    },
+    "vf_coef": 0.5
+  },
+  "n_envs": 4,
+  "reward": "v0",
+  "run_name": "lunarlander-v3_ppo_v0_seed2_1767401621",
+  "seed": 2,
+  "timesteps": 600000,
+  "train_time_seconds": 785.7361505031586
+}

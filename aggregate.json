@@ -1,0 +1,113 @@
+{
+  "deduped_runs": 60,
+  "groups": [
+    {
+      "env_id": "CartPole-v1",
+      "algo": "dqn",
+      "reward": "v0",
+      "n_seeds": 5,
+      "mean_return": 122.65,
+      "std_return": 36.013556475305236,
+      "mean_train_time_s": 229.72155451774597
+    },
+    {
+      "env_id": "CartPole-v1",
+      "algo": "dqn",
+      "reward": "v1",
+      "n_seeds": 5,
+      "mean_return": 110.44432703,
+      "std_return": 7.850744042330105,
+      "mean_train_time_s": 234.39396085739136
+    },
+    {
+      "env_id": "CartPole-v1",
+      "algo": "dqn",
+      "reward": "v2",
+      "n_seeds": 5,
+      "mean_return": 262.7082651,
+      "std_return": 178.06895254169615,
+      "mean_train_time_s": 227.03344144821168
+    },
+    {
+      "env_id": "CartPole-v1",
+      "algo": "ppo",
+      "reward": "v0",
+      "n_seeds": 5,
+      "mean_return": 500.0,
+      "std_return": 0.0,
+      "mean_train_time_s": 206.5510040283203
+    },
+    {
+      "env_id": "CartPole-v1",
+      "algo": "ppo",
+      "reward": "v1",
+      "n_seeds": 5,
+      "mean_return": 499.98051423,
+      "std_return": 0.0031674139389540907,
+      "mean_train_time_s": 207.27801718711854
+    },
+    {
+      "env_id": "CartPole-v1",
+      "algo": "ppo",
+      "reward": "v2",
+      "n_seeds": 5,
+      "mean_return": 499.91667291000005,
+      "std_return": 0.030167574652910385,
+      "mean_train_time_s": 207.80649089813232
+    },
+    {
+      "env_id": "LunarLander-v3",
+      "algo": "dqn",
+      "reward": "v0",
+      "n_seeds": 5,
+      "mean_return": 225.64144477,
+      "std_return": 24.177534751628325,
+      "mean_train_time_s": 1496.6698459625245
+    },
+    {
+      "env_id": "LunarLander-v3",
+      "algo": "dqn",
+      "reward": "v1",
+      "n_seeds": 5,
+      "mean_return": 232.95645337000002,
+      "std_return": 20.667561781157183,
+      "mean_train_time_s": 1427.1529157161713
+    },
+    {
+      "env_id": "LunarLander-v3",
+      "algo": "dqn",
+      "reward": "v2",
+      "n_seeds": 5,
+      "mean_return": 245.03365348999995,
+      "std_return": 20.62216939668554,
+      "mean_train_time_s": 1452.9792703151702
+    },
+    {
+      "env_id": "LunarLander-v3",
+      "algo": "ppo",
+      "reward": "v0",
+      "n_seeds": 5,
+      "mean_return": 238.57745617,
+      "std_return": 31.18882744610033,
+      "mean_train_time_s": 766.5503358840942
+    },
+    {
+      "env_id": "LunarLander-v3",
+      "algo": "ppo",
+      "reward": "v1",
+      "n_seeds": 5,
+      "mean_return": 223.12021766000004,
+      "std_return": 25.36842565960351,
+      "mean_train_time_s": 784.5641398906707
+    },
+    {
+      "env_id": "LunarLander-v3",
+      "algo": "ppo",
+      "reward": "v2",
+      "n_seeds": 5,
+      "mean_return": 264.16757114,
+      "std_return": 9.845955990657902,
+      "mean_train_time_s": 758.7376728057861
+    }
+  ]
+}

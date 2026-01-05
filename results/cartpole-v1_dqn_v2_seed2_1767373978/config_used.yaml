@@ -1,0 +1,16 @@
+model_kwargs:
+  learning_rate: 0.0005
+  gamma: 0.99
+  buffer_size: 50000
+  batch_size: 64
+  learning_starts: 1000
+  train_freq: 4
+  gradient_steps: 1
+  target_update_interval: 1000
+  exploration_fraction: 0.35
+  exploration_final_eps: 0.05
+  policy_kwargs:
+    net_arch:
+    - 128
+    - 128
+    activation_fn: ReLU

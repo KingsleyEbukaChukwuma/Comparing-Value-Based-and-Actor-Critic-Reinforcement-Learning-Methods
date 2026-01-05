@@ -1,0 +1,14 @@
+{
+  "deduped_runs": 5,
+  "groups": [
+    {
+      "env_id": "CartPole-v1",
+      "algo": "dqn",
+      "reward": "v0",
+      "n_seeds": 5,
+      "mean_return": 372.9,
+      "std_return": 155.73792489307155,
+      "mean_train_time_s": 291.80690145492554
+    }
+  ]
+}

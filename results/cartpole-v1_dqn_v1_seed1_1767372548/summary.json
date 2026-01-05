@@ -1,0 +1,33 @@
+{
+  "algo": "dqn",
+  "env_id": "CartPole-v1",
+  "eval_episodes": 20,
+  "eval_freq": 10000,
+  "final_eval_mean_return": 108.50718639999998,
+  "final_eval_std_return": 3.9117220889777107,
+  "model_kwargs": {
+    "batch_size": 64,
+    "buffer_size": 50000,
+    "exploration_final_eps": 0.05,
+    "exploration_fraction": 0.35,
+    "gamma": 0.99,
+    "gradient_steps": 1,
+    "learning_rate": 0.0005,
+    "learning_starts": 1000,
+    "policy_kwargs": {
+      "activation_fn": "<class 'torch.nn.modules.activation.ReLU'>",
+      "net_arch": [
+        128,
+        128
+      ]
+    },
+    "target_update_interval": 1000,
+    "train_freq": 4
+  },
+  "n_envs": 1,
+  "reward": "v1",
+  "run_name": "cartpole-v1_dqn_v1_seed1_1767372548",
+  "seed": 1,
+  "timesteps": 150000,
+  "train_time_seconds": 238.94734740257263
+}

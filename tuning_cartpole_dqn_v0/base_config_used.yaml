@@ -1,0 +1,53 @@
+model_kwargs: {}
+policy_kwargs_space:
+  net_arch:
+  - - 64
+    - 64
+  - - 128
+    - 128
+  - - 256
+    - 256
+  activation_fn:
+  - ReLU
+  - Tanh
+dqn_space:
+  learning_rate:
+  - 0.001
+  - 0.0007
+  - 0.0005
+  - 0.0003
+  - 0.0001
+  gamma:
+  - 0.98
+  - 0.99
+  - 0.995
+  buffer_size:
+  - 50000
+  - 100000
+  - 200000
+  batch_size:
+  - 64
+  - 128
+  learning_starts:
+  - 1000
+  - 5000
+  - 10000
+  target_update_interval:
+  - 250
+  - 500
+  - 1000
+  - 2000
+  - 5000
+  exploration_fraction:
+  - 0.1
+  - 0.2
+  - 0.3
+  - 0.4
+  exploration_final_eps:
+  - 0.01
+  - 0.02
+  - 0.05
+  train_freq:
+  - 4
+  gradient_steps:
+  - 1
