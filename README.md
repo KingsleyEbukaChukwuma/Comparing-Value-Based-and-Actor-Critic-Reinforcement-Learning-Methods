@@ -308,5 +308,15 @@ This project demonstrates that algorithm choice, reward design, and evaluation m
 
 The results highlight practical trade offs between value based and actor critic approaches and reinforce the importance of disciplined experimental design in RL research.
 
+---
+
+## References
+
+### 1. Mnih, V. et al. (2015). *Human-level control through deep reinforcement learning*. Nature, 518, 529–533.
+### 2. Schulman, J. et al. (2017). *Proximal Policy Optimization Algorithms*. arXiv:1707.06347.
+### 3. Brockman, G. et al. (2016). *OpenAI Gym*. arXiv:1606.01540.
+### 4. Raffin, A. et al. (2021). *Stable-Baselines3: Reliable Reinforcement Learning Implementations*. Journal of Machine Learning Research.
+
+
 
 
