@@ -1,12 +1,12 @@
-\# DQN vs PPO on CartPole and LunarLander
+# DQN vs PPO on CartPole and LunarLander
 
 
 
-\## Overview
+## Overview
 
 
 
-This repository contains a comparative reinforcement learning study between \*\*Deep Q-Network (DQN)\*\* and \*\*Proximal Policy Optimization (PPO)\*\*. The goal is to analyze how value based and actor critic methods differ in performance, stability, reward sensitivity, and computational efficiency across environments of increasing complexity.
+This repository contains a comparative reinforcement learning study between **Deep Q-Network (DQN)** and **Proximal Policy Optimization (PPO)**. The goal is to analyze how value based and actor critic methods differ in performance, stability, reward sensitivity, and computational efficiency across environments of increasing complexity.
 
 
 
@@ -14,49 +14,15 @@ The project was designed to meet the course requirements for:
 
 
 
-\* multiple RL algorithms,
+* multiple RL algorithms,
 
-\* multiple environments,
+* multiple environments,
 
-\* reward function analysis,
+* reward function analysis,
 
-\* systematic hyperparameter tuning,
+* systematic hyperparameter tuning,
 
-\* multi-seed evaluation.
-
-
-
----
-
-
-
-\## Environments
-
-
-
-\### CartPole-v1
-
-
-
-\* Discrete action space
-
-\* Low-dimensional state space
-
-\* Dense reward
-
-\* Used as a simple benchmark to study convergence speed and stability
-
-
-
-\### LunarLander-v3
-
-
-
-\* Discrete action space with continuous state variables
-
-\* Sparse terminal reward with shaped intermediate rewards
-
-\* More complex dynamics and sensitive to reward design
+* multi-seed evaluation.
 
 
 
@@ -64,35 +30,69 @@ The project was designed to meet the course requirements for:
 
 
 
-\## Algorithms
+## Environments
 
 
 
-\### Deep Q-Network (DQN)
+### CartPole-v1
 
 
 
-\* Value based method
+* Discrete action space
 
-\* Learns an action value (Q) function
+* Low-dimensional state space
 
-\* Uses experience replay and a target network
+* Dense reward
 
-\* Sensitive to hyperparameters and exploration schedule
-
-
-
-\### Proximal Policy Optimization (PPO)
+* Used as a simple benchmark to study convergence speed and stability
 
 
 
-\* Actor critic method
+### LunarLander-v3
 
-\* Directly optimizes a stochastic policy
 
-\* Uses clipped policy updates for stability
 
-\* Generally more robust across environments
+* Discrete action space with continuous state variables
+
+* Sparse terminal reward with shaped intermediate rewards
+
+* More complex dynamics and sensitive to reward design
+
+
+
+---
+
+
+
+## Algorithms
+
+
+
+### Deep Q-Network (DQN)
+
+
+
+* Value based method
+
+* Learns an action value (Q) function
+
+* Uses experience replay and a target network
+
+* Sensitive to hyperparameters and exploration schedule
+
+
+
+### Proximal Policy Optimization (PPO)
+
+
+
+* Actor critic method
+
+* Directly optimizes a stochastic policy
+
+* Uses clipped policy updates for stability
+
+* Generally more robust across environments
 
 
 
@@ -104,7 +104,7 @@ These two algorithms represent fundamentally different RL paradigms and form the
 
 
 
-\## Reward Functions
+## Reward Functions
 
 
 
@@ -112,15 +112,15 @@ Three reward variants were evaluated:
 
 
 
-\* \*\*v0 (baseline)\*\*: environment default reward
+* **v0 (baseline)**: environment default reward
 
-\* \*\*v1\*\*: mild state-based shaping
+* **v1**: mild state-based shaping
 
-\* \*\*v2\*\*: refined shaping applied only in critical states
+* **v2**: refined shaping applied only in critical states
 
 
 
-Reward shaping was treated as an \*\*ablation study\*\*: for fixed hyperparameters, performance under different reward variants was compared.
+Reward shaping was treated as an **ablation study**: for fixed hyperparameters, performance under different reward variants was compared.
 
 
 
@@ -128,9 +128,9 @@ Key observations:
 
 
 
-\* Reward shaping had little effect on CartPole
+* Reward shaping had little effect on CartPole
 
-\* Reward shaping (v2) significantly improved performance and stability on LunarLander
+* Reward shaping (v2) significantly improved performance and stability on LunarLander
 
 
 
@@ -138,23 +138,23 @@ Key observations:
 
 
 
-\## Hyperparameter Tuning
+## Hyperparameter Tuning
 
 
 
-Limited but systematic \*\*random search\*\* was performed over key parameters:
+Limited but systematic **random search** was performed over key parameters:
 
 
 
-\* learning rate
+* learning rate
 
-\* discount factor (gamma)
+* discount factor (gamma)
 
-\* exploration schedule (DQN)
+* exploration schedule (DQN)
 
-\* target network update interval
+* target network update interval
 
-\* neural network architecture
+* neural network architecture
 
 
 
@@ -170,31 +170,31 @@ An important finding was that single-seed optimal configurations did not always 
 
 
 
-\## Experimental Setup
+## Experimental Setup
 
 
 
-\* \*\*Framework:\*\* Stable-Baselines3
+* **Framework:** Stable-Baselines3
 
-\* \*\*Language:\*\* Python
+* **Language:** Python
 
-\* \*\*Seeds:\*\* 5 (0–4)
+* **Seeds:** 5 (0–4)
 
-\* \*\*Evaluation metric:\*\* mean ± standard deviation of episode return
+* **Evaluation metric:** mean ± standard deviation of episode return
 
-\* \*\*Training horizon:\*\*
-
-
-
-&nbsp; \* CartPole-v1: up to 600k timesteps
-
-&nbsp; \* LunarLander-v3: 600k timesteps
-
-\* \*\*Hardware:\*\* local machine (CPU)
+* **Training horizon:**
 
 
 
-Videos were recorded using \*\*seed 0\*\* as a representative trained policy. Quantitative results are reported as multi-seed averages.
+&nbsp; * CartPole-v1: up to 600k timesteps
+
+&nbsp; * LunarLander-v3: 600k timesteps
+
+* **Hardware:** local machine (CPU)
+
+
+
+Videos were recorded using **seed 0** as a representative trained policy. Quantitative results are reported as multi-seed averages.
 
 
 
@@ -202,11 +202,11 @@ Videos were recorded using \*\*seed 0\*\* as a representative trained policy. Qu
 
 
 
-\## Results Summary
+## Results Summary
 
 
 
-\### CartPole-v1
+### CartPole-v1
 
 
 
@@ -224,7 +224,7 @@ PPO solved CartPole consistently across all seeds. DQN exhibited high variance d
 
 
 
-\### LunarLander-v3
+### LunarLander-v3
 
 
 
@@ -246,17 +246,17 @@ On LunarLander, PPO achieved higher return with lower variance and approximately
 
 
 
-\## Key Insights
+## Key Insights
 
 
 
-\* Actor critic methods (PPO) are more stable and sample efficient than value based methods (DQN)
+* Actor critic methods (PPO) are more stable and sample efficient than value based methods (DQN)
 
-\* Reward shaping is environment dependent and most effective in complex tasks
+* Reward shaping is environment dependent and most effective in complex tasks
 
-\* Multi seed evaluation is essential for reliable RL comparison
+* Multi seed evaluation is essential for reliable RL comparison
 
-\* Hyperparameter tuning alone is insufficient to eliminate instability in vanilla DQN
+* Hyperparameter tuning alone is insufficient to eliminate instability in vanilla DQN
 
 
 
@@ -266,7 +266,7 @@ On LunarLander, PPO achieved higher return with lower variance and approximately
 
 
 
-\## Reproducibility
+## Reproducibility
 
 
 
@@ -276,7 +276,7 @@ All experiments are reproducible using the provided configuration files and scri
 
 ---
 
-\## How to Run
+## How to Run
 
 ### 1. Create virtual environment
 
@@ -298,7 +298,7 @@ python -m src.aggregate_results --runs_dir runs_fresh --out results/aggregate.js
 
 
 
-\## Conclusion
+## Conclusion
 
 
 
