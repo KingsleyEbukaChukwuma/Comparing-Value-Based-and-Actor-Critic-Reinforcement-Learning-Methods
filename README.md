@@ -216,7 +216,7 @@ Videos were recorded using **seed 0** as a representative trained policy. Quanti
 
 | PPO       | v0     | 500.0 ± 0.0   |
 
-| DQN       | v0     | 343.7 ± 191.4 |
+| DQN       | v0     | 250.39 ± 144.98 |
 
 
 
