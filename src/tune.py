@@ -83,7 +83,7 @@ def main():
     ap.add_argument("--train_timesteps", type=int, default=200_000)
     ap.add_argument("--eval_episodes", type=int, default=20)
     ap.add_argument("--eval_freq", type=int, default=10_000)
-    ap.add_argument("--n_envs", type=int, default=4)
+    ap.add_argument("--n_envs", type=int, default=1)
     ap.add_argument("--device", type=str, default="auto")
     ap.add_argument("--out_dir", type=str, default="tuning")
     args = ap.parse_args()

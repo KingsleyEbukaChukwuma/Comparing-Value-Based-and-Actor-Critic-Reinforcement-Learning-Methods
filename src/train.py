@@ -67,7 +67,7 @@ def main():
     ap.add_argument("--eval_freq", type=int, default=10_000)
     ap.add_argument("--n_envs", type=int, default=1)
     ap.add_argument("--device", type=str, default="auto")
-    ap.add_argument("--runs_dir", type=str, default="runs")
+    ap.add_argument("--runs_dir", type=str, default="results")
     ap.add_argument("--run_name", type=str, default=None)
     ap.add_argument("--save_replay", action="store_true")
     args = ap.parse_args()

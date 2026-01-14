@@ -5,7 +5,7 @@ ppo = np.load(
     r"results\cartpole-v1_ppo_v0_seed0_1767374681\eval\evaluations.npz"
 )
 dqn = np.load(
-    r"runs_cartpole_dqn_robust\cartpole-v1_dqn_v0_seed0_1767520668\eval\evaluations.npz"
+    r"runs_cartpole_dqn_fixed\cartpole-v1_dqn_v0_seed0_1767518693\eval\evaluations.npz"
 )
 
 ppo_t = ppo["timesteps"]
@@ -32,3 +32,6 @@ plt.grid(True)
 plt.tight_layout()
 plt.savefig("cartpole_learning_curve.png", dpi=200)
 plt.show()
+print("PPO timesteps:", ppo_t[:5])
+print("DQN timesteps:", dqn_t[:5])
+
